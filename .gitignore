@@ -19,7 +19,7 @@ vignettes/*.pdf
 .httr-oauth
 
 # Connection strings to shinyapps.
-rsconnect/
+rsconnect/*.*
 
 # Cfg file (there is one with demo login pushed). Don't push own tokens!
 cfg.R

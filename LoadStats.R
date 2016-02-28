@@ -1,12 +1,12 @@
 
 # Create WG API Url.
-createUrlVehicleStats <- function(fields1, extra, account_id, in_garage,  server){
+CreateUrlVehicleStats <- function(fields, extra, account_id, in_garage,  server){
 
   message(paste("Creating api uri for server: ", server, 
                 ", accoun_id: ", account_id,
                 ", inGarage: ", in_garage, "."))
   
-  pField <- paste(fields1, collapse = '%2C') # %2C - encoded comma: ','
+  pField <- paste(fields, collapse = '%2C') # %2C - encoded comma: ','
   pExtra <- paste(extra, collapse = '%2C')  
   
   if(isTRUE(in_garage)){
