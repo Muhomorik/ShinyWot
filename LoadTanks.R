@@ -1,4 +1,5 @@
-# Filename
+# Get Vehicle data from API.
+
 library(jsonlite)
 
 fileName.Tanks <- "TankopediaVehicles.csv"
@@ -12,12 +13,12 @@ CreateUrl_EncyclopediaVehicles <- function(server, application_id,
   # Api: api.worldoftanks.eu/wot/encyclopedia/vehicles
   # 
   # Args:
+  #   server: string, ru/eu.
   #   application_id: string, Application ID.
   #   fields: string, list. Response field. The fields are separated with commas.
   #   tank_id: string, list. Vehicle ID.
   #   nation: string, list. Nation.
   #   tier: string, list. Tier.
-  #   server: string, ru/eu.
   #
   # Returns:
   #   Vehicle df with tanks tier, type, name and tank_id.  
@@ -28,6 +29,11 @@ CreateUrl_EncyclopediaVehicles <- function(server, application_id,
   url <- "https://api.worldoftanks."
   url <- paste0(url, server)
   url <- paste0(url, "/wot/encyclopedia/vehicles/?application_id=", application_id)
+
+  # Warning for demo id.
+  if(application_id == "demo"){
+    message("CreateUrlVehicleStats - demo id")    
+  }
   
   # %2C - encoded comma: ','  
   
@@ -55,14 +61,14 @@ CreateUrl_EncyclopediaVehicles <- function(server, application_id,
   url
 }
 
-LoadTankList <- function(token) {
+LoadTankList <- function(application_id) {
   # Reads ALL Vehicles from TankodediaVehicles.csv.
   # Field: tank_id, name, tier, type.
   # Downloads data (all tanks) from WG api and saves if the file is missing.
   # Api: api.worldoftanks.eu/wot/encyclopedia/vehicles
   #
   # Args:
-  #   token: wg api key.
+  #   application_id: string, Application ID.
   #
   # Returns:
   #   Vehicle df with tanks tier, type, name and tank_id.
@@ -70,7 +76,7 @@ LoadTankList <- function(token) {
   if (!file.exists(fileName.Tanks)) {
     message("Vehicle data is missing, downloading...")
     
-    urlAllTiers <- CreateUrl_EncyclopediaVehicles("eu", token, c("tier", "type", "tank_id", "name"))
+    urlAllTiers <- CreateUrl_EncyclopediaVehicles("eu", application_id, c("tier", "type", "tank_id", "name"))
     # Download list of available vehicles..
 
     # Parse json.

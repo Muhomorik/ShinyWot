@@ -49,11 +49,11 @@ shinyServer(function(input, output) {
   
   # Load (reactive) and filter data based on input.
   LoadVehicleStats <- reactive({
-    url <- CreateUrlVehicleStats(
-      req.fields, req.extra, input$accountid, input$inGarage, "ru")
+    url <- CreateUrlVehicleStats("ru", token, 
+      req.fields, req.extra, input$accountid, input$inGarage)
     
     VehicleStats <- 
-      loadPlayerStats(url)
+      LoadPlayerStats(url)
     
     df <- VehicleStats %>% 
       inner_join(Vehicles, by="tank_id")
