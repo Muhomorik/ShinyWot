@@ -3,20 +3,78 @@ library(jsonlite)
 
 fileName.Tanks <- "TankopediaVehicles.csv"
 
-# Loar Vehicls from WG API if mission or get from file.
-loadTankList <- function() {
+CreateUrl_EncyclopediaVehicles <- function(server, application_id, 
+                                           fields = NULL, 
+                                           tank_id = NULL, 
+                                           nation = NULL, 
+                                           tier = NULL ){
+  # Create URL to Encyclopedia/Vvehicles API:
+  # Api: api.worldoftanks.eu/wot/encyclopedia/vehicles
+  # 
+  # Args:
+  #   application_id: string, Application ID.
+  #   fields: string, list. Response field. The fields are separated with commas.
+  #   tank_id: string, list. Vehicle ID.
+  #   nation: string, list. Nation.
+  #   tier: string, list. Tier.
+  #   server: string, ru/eu.
+  #
+  # Returns:
+  #   Vehicle df with tanks tier, type, name and tank_id.  
+  
+  message(paste("CreateUrl_EncyclopediaVehicles: ", server))
+  
+  # Build url.
+  url <- "https://api.worldoftanks."
+  url <- paste0(url, server)
+  url <- paste0(url, "/wot/encyclopedia/vehicles/?application_id=", application_id)
+  
+  # %2C - encoded comma: ','  
+  
+  # fields
+  if(!is.null(fields)){
+    cField <- paste(fields, collapse = '%2C')    
+    url <- paste0(url, "&fields=", cField)
+  }
+  # tank_id
+  if(!is.null(tank_id)){
+    cTankId <- paste(tank_id, collapse = '%2C')  
+    url <- paste0(url, "&tank_id=", cTankId)
+  }
+  # nation
+  if(!is.null(nation)){
+    cNation <- paste(nation, collapse = '%2C')  
+    url <- paste0(url, "&nation=", cNation)
+  }
+  # tier
+  if(!is.null(tier)){
+    cTier <- paste(tier, collapse = '%2C')  
+    url <- paste0(url, "&tier=", cTier)
+  }  
+  
+  url
+}
+
+LoadTankList <- function(token) {
+  # Reads ALL Vehicles from TankodediaVehicles.csv.
+  # Field: tank_id, name, tier, type.
+  # Downloads data (all tanks) from WG api and saves if the file is missing.
+  # Api: api.worldoftanks.eu/wot/encyclopedia/vehicles
+  #
+  # Args:
+  #   token: wg api key.
+  #
+  # Returns:
+  #   Vehicle df with tanks tier, type, name and tank_id.
   
   if (!file.exists(fileName.Tanks)) {
-    #message("Vehicle data is missing, downloading...")
+    message("Vehicle data is missing, downloading...")
     
+    urlAllTiers <- CreateUrl_EncyclopediaVehicles("eu", token, c("tier", "type", "tank_id", "name"))
     # Download list of available vehicles..
-    url.Vehicles_AllTiers <-
-      "https://api.worldoftanks.eu/wot/encyclopedia/vehicles/?application_id=demo&fields=tier%2Ctype%2C%20tank_id%2Cname"
-    url.VehiclesTier678 <-
-      "https://api.worldoftanks.eu/wot/encyclopedia/vehicles/?application_id=demo&fields=tier%2Ctype%2C%20tank_id&tier=6%2C7%2C8"
-    
+
     # Parse json.
-    Vehicles <- fromJSON(url.Vehicles_AllTiers)
+    Vehicles <- fromJSON(urlAllTiers)
     
     if(Vehicles$status != "ok") {
       warning("Error reading Vehicle List from Wargaming API.")
@@ -25,25 +83,21 @@ loadTankList <- function() {
     # Convert array to df.
     Vehicles <- bind_rows(Vehicles$data) #dplyr TODO: use fromJSON flatten = TRUE
     
-    Vehicles$tank_id <- as.character(Vehicles$tank_id)
-    Vehicles$tier <- as.factor(Vehicles$tier)
-    Vehicles$type <- as.factor(Vehicles$type)
-    
     # save to file.
     write.table(Vehicles, fileName.Tanks, sep = ",")
   } else {
-    #message("Loading Vehicles from file...")
+    message("Loading Vehicles from file...")
     
     # Read to global.
     Vehicles <-
       read.table(fileName.Tanks, sep = ",")[c("tier","type","name","tank_id")]
-    
-    # fix types.
-    Vehicles$tier <- as.factor(Vehicles$tier)
-    Vehicles$type <- as.factor(Vehicles$type)
-    Vehicles$name <- as.factor(Vehicles$name)
-    Vehicles$tank_id <- as.character(Vehicles$tank_id)
-    
-    Vehicles
   }
+  
+  # fix types.
+  Vehicles$tier <- as.factor(Vehicles$tier)
+  Vehicles$type <- as.factor(Vehicles$type)
+  Vehicles$name <- as.factor(Vehicles$name)
+  Vehicles$tank_id <- as.character(Vehicles$tank_id)
+  
+  Vehicles
 }

@@ -14,9 +14,31 @@ library(ggplot2)
 
 # http://stackoverflow.com/questions/16848352/r-and-shiny-pass-inputs-from-sliders-to-reactive-function-to-compute-output
 
+# http://shiny.rstudio.com/articles/action-buttons.html
+
+# The function that you pass to shinyServer() is called once for each session. 
+# In other words, func is called each time a web browser is pointed to the Shiny application.
+
+# A read-only data set that will load once, when Shiny starts, and will be
+# available to each user session
+
+# A non-reactive function that will be available to each user session
+
+source("cfg.R")
+token <- GetWgApiKey()
+
+source("LoadTanks.R", local=TRUE)
+Vehicles <- LoadTankList(token)
+
 shinyServer(function(input, output) {
 
-  source("LoadTanks.R", local=TRUE)
+  # Other objects inside the function, such as variables and functions, 
+  # are also instantiated for each session. 
+  
+  # Can create a local variable varA, which will be a copy of the shared variable
+  # varA plus 1. This local copy of varA is not be visible in other sessions.
+  # With <- or change the global var with <<-.
+  
   source("LoadStats.R", local=TRUE)
   source("Helpers.R", local=TRUE)
   
@@ -24,7 +46,7 @@ shinyServer(function(input, output) {
   req.fields <- c("tank_id", "random")
   req.extra <- "random"
   
-  Vehicles <- loadTankList()
+
   
   url <- reactive({
     createUrlVehicleStats(

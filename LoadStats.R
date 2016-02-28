@@ -1,6 +1,10 @@
 
 # Create WG API Url.
 createUrlVehicleStats <- function(fields1, extra, account_id, in_garage,  server){
+
+  message(paste("Creating api uri for server: ", server, 
+                ", accoun_id: ", account_id,
+                ", inGarage: ", in_garage, "."))
   
   pField <- paste(fields1, collapse = '%2C') # %2C - encoded comma: ','
   pExtra <- paste(extra, collapse = '%2C')  
@@ -37,7 +41,7 @@ createUrlVehicleStats <- function(fields1, extra, account_id, in_garage,  server
 
 # Load stats from WG API.
 loadPlayerStats <- function(url){
-  #message("Downloading vehicle stats from API...")
+  message("Downloading vehicle stats from API...")
 
   # Correct url from web, just in case:
   # "https://api.worldoftanks.eu/wot/tanks/stats/?application_id=demo&fields=tank_id%2Crandom&extra=random&account_id=500362266&in_garage=1"
