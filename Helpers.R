@@ -1,8 +1,17 @@
 library(dplyr)
 
-
-# Load stats from WG API.
 filterDf <- function(df, tierMin, tierMax){
+  # Helper that calculates new rows and filters df based on tier. Filters based
+  # on distribution as well.
+  # 
+  # Args:
+  #   df: merged df to filter/add rows.
+  #   tierMin: min tier
+  #   tierMax: max tier
+  #
+  # Returns:
+  #   Filtered data.frame.
+  
   df <- df %>%
     mutate(winRate = round(df$random.wins/df$random.battles*100, 2)) %>%  
     mutate(avg.Spotted = round(df$random.spotted/df$random.battles, 2)) %>% 

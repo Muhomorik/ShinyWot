@@ -85,8 +85,8 @@ shinyUI(fluidPage(
     # Show a plot of the generated distribution
     mainPanel(
       
-      h3(tags$div(
-        HTML("<font color= #ff0000>This thing is SLOW (wait 20s)</font>")
+      h4(tags$div(
+        HTML("<font color= #ff0000>This thing makes some HTTP calls, may be slow.</font>")
       )),
       
       #p(tags$a(href = "reqUrl", "Vehicle statistics EU Api")),      
