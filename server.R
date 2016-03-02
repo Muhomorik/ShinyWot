@@ -65,34 +65,48 @@ shinyServer(function(input, output) {
   output$avgDmg_vs_winrate <- renderPlot({
     
     p <- ggplot(LoadVehicleStats(), aes(avg.DamageDealt, winRate, label = name)) 
-    p <- p + geom_point()
+    p <- p + geom_point(aes(color = tier))
     p <- p + facet_grid(type~.)
     p <- p + geom_text(check_overlap = TRUE)
     p <- p + geom_smooth(method=lm)
+    p <- p + labs(title ="Average Dmg vs Win ratio", x = "Damage", y = "Win ratio")
     p
    })
   
-  # spotted vs avg dmg.
+  # spotted vs winRate.
   output$spotted_vs_winrate <- renderPlot({
     
     p <- ggplot(LoadVehicleStats(), aes(avg.Spotted, winRate, label = name)) 
-    p <- p + geom_point()
+    p <- p + geom_point(aes(color = tier))
     p <- p + facet_grid(type~.)
     p <- p + geom_text(check_overlap = TRUE)
     p <- p + geom_smooth(method=lm)
+    p <- p + labs(title ="Spottd tanks vs Win ratio", x = "Spotted tanks", y = "Win ratio")
     p
   })
   
   # battles fought histogram.
   output$battlesFought_hist <- renderPlot({
-    
-    hist(LoadVehicleStats()$random.battles, breaks = 34, col = "grey", las = 3)
+  
+    p <- ggplot(LoadVehicleStats(), aes(random.battles)) 
+    p <- p + geom_histogram(bins = 34, colour="white")
+    p <- p + labs(title ="Battles fought histogram", x = "Win ratio", y = "Count")
+    p
   })  
 
-  # battles fought histogram.
+  # winrate histogram/density.
   output$winrate_hist <- renderPlot({
     
-    hist(LoadVehicleStats()$winRate, breaks = 34, col = "grey", las = 3)
+    mean <- mean(LoadVehicleStats()$winRate)
+    
+    p <- ggplot(LoadVehicleStats(), aes(x=winRate)) 
+    p <- p + geom_histogram(aes(y=..density..),bins = 32, colour="white")
+    p <- p + geom_vline(xintercept = mean, show.legend = TRUE,
+                        linetype="dashed", size=1)
+    p <- p + labs(title ="Win ratio density", x = "Win ratio", y = "Density")
+    p <- p + geom_density(aes(winRate, alpha=.2, color=tier), size=0.5)
+    p
+
   })  
   
   # rnorn for winrate.

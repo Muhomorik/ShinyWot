@@ -98,8 +98,9 @@ shinyUI(fluidPage(
       h3("Battles fought histogam"),
       plotOutput("battlesFought_hist"),
       
-      h3("WinRate histogam"),
-      plotOutput("winrate_hist"),
+      h3("WinRate density"),
+      p("WinRate accumulated density with blan and density by tier with lines."),
+      ("winrate_hist"),
       
       h3("dnorm for WinRate"),
       plotOutput("winrate_dnorm"),      
