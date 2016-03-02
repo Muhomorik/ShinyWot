@@ -89,7 +89,11 @@ shinyUI(fluidPage(
         HTML("<font color= #ff0000>This thing makes some HTTP calls, may be slow.</font>")
       )),
       
-      #p(tags$a(href = "reqUrl", "Vehicle statistics EU Api")),      
+      h4("About"),
+      p("This is my \"pet toy\" project. Once upon a time I use to play MMORPG World of Tanks."),
+      p("The good thind is thet Wargaming provide an API (json)."),
+      p("So I decided to take a look and make a simple app to perform requests and plot response. 
+        The idea was to check how warious types of vehicles perform for the articular player."),
 
       h3("Battles fought histogam"),
       plotOutput("battlesFought_hist"),
