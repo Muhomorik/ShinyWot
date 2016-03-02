@@ -8,7 +8,7 @@ GetWgApiKey <- function(){
   
   message("GetWgApiKey.")
   
-  key <- "2e98af4d00e3f9ba1da0c403a816060c"  
+  key <- "demo"  
   key
 }
 
