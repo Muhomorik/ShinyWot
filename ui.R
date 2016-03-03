@@ -47,7 +47,10 @@ shinyUI(fluidPage(
                     # Streamers
                     "Vspishka[-KORM] @RU" = 23363,
                     "Gleborg[-KORM] @RU" = 364846,
-                    "Amway921[-KORM] @RU" = 855119
+                    "Amway921[-KORM] @RU" = 855119,
+                    
+                    # Othe streamers
+                    "MargaretHildaThatcher[MUHYC] @RU" = 7231485
                     ), 
                   selected = 500362266),
       

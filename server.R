@@ -96,7 +96,7 @@ shinyServer(function(input, output) {
 
   # winrate histogram/density.
   output$winrate_hist <- renderPlot({
-    
+    # TODO: this one draws double lines with color!
     mean <- mean(LoadVehicleStats()$winRate)
     
     p <- ggplot(LoadVehicleStats(), aes(x=winRate)) 
