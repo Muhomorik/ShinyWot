@@ -76,27 +76,31 @@ LoadTankList <- function(application_id) {
   if (!file.exists(fileName.Tanks)) {
     message("Vehicle data is missing, downloading...")
     
-    urlAllTiers <- CreateUrl_EncyclopediaVehicles("eu", application_id, c("tier", "type", "tank_id", "name"))
+    # TODO(Muhomorik): custom id for each server (can't use ru-id on eu). 
+    urlAllTiers <- CreateUrl_EncyclopediaVehicles("eu", "demo", c("tier", "type", "tank_id", "name"))
+    #urlAllTiers <- CreateUrl_EncyclopediaVehicles("ru", application_id, c("tier", "type", "tank_id", "name"))
+        
     # Download list of available vehicles..
-
     # Parse json.
-    Vehicles <- fromJSON(urlAllTiers)
+    Vehicles <- fromJSON(urlAllTiers, flatten = TRUE)
     
     if(Vehicles$status != "ok") {
-      warning("Error reading Vehicle List from Wargaming API.")
+      errText <- paste("Error reading Vehicle List from Wargaming API: ", 
+                       Vehicles$error$message, ".", sep = " ")
+      warning(errText)
     }
     
     # Convert array to df.
-    Vehicles <- bind_rows(Vehicles$data) #dplyr TODO: use fromJSON flatten = TRUE
+    Vehicles <- bind_rows(Vehicles$data)
     
     # save to file.
-    write.table(Vehicles, fileName.Tanks, sep = ",")
+    write.table(Vehicles, fileName.Tanks, sep = ",", row.names = F)
   } else {
     message("Loading Vehicles from file...")
     
     # Read to global.
     Vehicles <-
-      read.table(fileName.Tanks, sep = ",")[c("tier","type","name","tank_id")]
+      read.table(fileName.Tanks, sep = ",", header = T) #[c("tier","type","name","tank_id")]
   }
   
   # fix types.
