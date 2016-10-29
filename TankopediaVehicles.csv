@@ -1,91 +1,92 @@
 "tier","type","name","tank_id"
-5,"mediumTank","T-34",1
-5,"SPG","SU-122A",16385
-10,"mediumTank","Object 907",15617
-9,"AT-SPG","Waffenträger auf Pz. IV",16401
-8,"lightTank","T49",18209
-7,"AT-SPG","SU-152",2305
+6,"mediumTank","A-43",12289
+2,"lightTank","T-60",15361
+6,"mediumTank","Pz.Kpfw. IV Schmalturm",57361
 2,"SPG","T1 HMC",2081
-5,"SPG","AMX 13 105 AM mle. 50",4161
-6,"lightTank","MT-25",16641
-2,"lightTank","T2 Light Tank",51489
+5,"mediumTank","T-34",1
+5,"heavyTank","Excelsior",54353
+7,"mediumTank","Panther",1297
 9,"heavyTank","WZ-111 model 1-4",2097
-10,"heavyTank","AMX 50 B",6209
-2,"lightTank","BT-2",1025
-7,"lightTank","AMX 13 75",5185
+5,"SPG","AMX 13 105 AM mle. 50",4161
 5,"mediumTank","Type 3 Chi-Nu",1377
-6,"heavyTank","VK 36.01 (H)",2321
-8,"heavyTank","M6A2E1",52513
-1,"mediumTank","Vickers Medium Mk. I",81
+9,"mediumTank","Object 430 Version II",17665
+2,"lightTank","Pz.Kpfw. 38H 735 (f)",52497
+2,"AT-SPG","Universal Carrier 2-pdr",8273
 7,"lightTank","Spähpanzer SP I C",18961
 3,"SPG","M7 Priest",3617
 9,"heavyTank","Type 4 Heavy",4193
 4,"heavyTank","Pz.Kpfw. B2 740 (f)",52241
-8,"AT-SPG","8,8 cm Pak 43 Jagdtiger",55313
+10,"heavyTank","AMX 50 B",6209
+8,"AT-SPG","Rheinmetall Skorpion G",50193
+5,"heavyTank","KV-1S",18689
 2,"lightTank","T1E6",53537
 3,"lightTank","Cruiser Mk. IV",7505
 9,"mediumTank","Škoda T 50",2161
 4,"SPG","M37",4641
-4,"mediumTank","Pz.Kpfw. III",4369
+7,"lightTank","WZ-131",3377
+3,"lightTank","T-46",3073
+7,"SPG","Lorraine 155 mle. 50",7233
+4,"mediumTank","Pz.Kpfw. III Ausf. J",4369
 8,"AT-SPG","AT 15",8529
 2,"mediumTank","T2 Medium Tank",5665
+4,"mediumTank","A-32",52993
 8,"SPG","SU-14-2",4097
 3,"AT-SPG","Renault UE 57",8257
 10,"mediumTank","TVP T 50/51",2417
 5,"lightTank","VK 16.02 Leopard",5393
 6,"AT-SPG","AT 8",9553
 5,"heavyTank","KV-220-2",54017
-2,"AT-SPG","AT-1",5121
-4,"mediumTank","M3 Lee",3105
+8,"AT-SPG","8,8 cm Pak 43 Jagdtiger",55313
+5,"mediumTank","M4A2E4 Sherman",52257
 5,"mediumTank","Pz.Kpfw. III/IV",6417
 7,"AT-SPG","T28 Concept",56609
 2,"SPG","Loyd Gun Carriage",10577
 4,"AT-SPG","T40",7713
 10,"heavyTank","IS-4",6145
 9,"heavyTank","VK 45.02 (P) Ausf. B",7441
+7,"lightTank","T71 CMCD",57633
 9,"SPG","FV3805",11601
 9,"AT-SPG","T95",8737
-5,"mediumTank","Matilda IV",51457
-6,"mediumTank","Pz.Kpfw. IV Schmalturm",57361
+6,"lightTank","MT-25",16641
+10,"heavyTank","IS-7",7169
 8,"mediumTank","Panther mit 8,8 cm L/71",60177
 8,"mediumTank","Panther II",8465
 6,"SPG","Hummel",273
 3,"lightTank","43 M. Toldi III",63505
 5,"lightTank","M24 Chaffee",9761
-4,"SPG","T82 HMC",18721
+2,"lightTank","T2 Light Tank",51489
 9,"AT-SPG","Object 704",8193
 4,"lightTank","M5A1 Stuart",3121
 10,"heavyTank","E 100",9489
-8,"mediumTank","59-Patton",63793
+2,"lightTank","Vickers Mk. E Type B",2353
 10,"heavyTank","T110E5",10785
 6,"mediumTank","T-34-85M",58113
-5,"mediumTank","Renault G1",4417
+3,"mediumTank","D2",321
 8,"heavyTank","IS-6",9217
-6,"mediumTank","A-43",12289
 8,"heavyTank","VK 45.02 (P) Ausf. A",10513
 8,"AT-SPG","Charioteer",14673
 9,"heavyTank","Conqueror",4433
 7,"heavyTank","IS-2",59137
 7,"lightTank","AMX 13 57 GF",63297
-3,"lightTank","Type 98 Ke-Ni",2401
+2,"mediumTank","Chi-Ni",353
 7,"AT-SPG","SU-100M1",10241
 9,"SPG","Bat.-Châtillon 155 55",14401
 8,"AT-SPG","Jagdpanther II",11537
-2,"mediumTank","Chi-Ni",353
 2,"lightTank","LT vz. 35",369
 6,"heavyTank","Object 244",60161
+6,"mediumTank","Strv m/42-57 Alt A.2",51585
 6,"heavyTank","T-150",11265
 10,"mediumTank","AMX 30 B",15425
-7,"SPG","Lorraine 155 mle. 50",7233
+7,"lightTank","AMX 13 75",5185
 3,"lightTank","Pz.Kpfw. I Ausf. C",12561
-10,"heavyTank","IS-7",7169
-9,"mediumTank","Object 430 Version II",17665
 6,"mediumTank","Škoda T 40",51569
 10,"AT-SPG","T110E3",13857
 10,"heavyTank","Object 777 Version II",61185
 8,"AT-SPG","Rheinmetall Skorpion",62481
+7,"mediumTank","Type 5 Chi-Ri",1121
 6,"mediumTank","Cromwell",1105
 4,"mediumTank","VK 20.01 (D)",13585
+3,"lightTank","Type 98 Ke-Ni",2401
 10,"heavyTank","T57 Heavy Tank",14881
 8,"AT-SPG","KV-4 KTTS",62209
 2,"SPG","Renault FT 75 BS",833
@@ -97,46 +98,44 @@
 10,"mediumTank","M60",15905
 10,"AT-SPG","Object 263",14337
 7,"heavyTank","Black Prince",3153
-5,"heavyTank","Excelsior",54353
+2,"lightTank","Cruiser Mk. I",5201
 4,"SPG","Pz.Sfl. IVb",15633
 3,"lightTank","M3 Stuart",289
 4,"heavyTank","Type 95 Heavy",4449
 8,"mediumTank","T-34-2",1585
 4,"lightTank","A-20",2049
 4,"lightTank","AMX 40",2881
-5,"heavyTank","Churchill III",51713
-8,"heavyTank","IS-3",5377
-2,"lightTank","T-60",15361
-6,"heavyTank","KV-85",2817
+7,"heavyTank","IS",513
+2,"lightTank","T-45",50945
 8,"AT-SPG","Rhm.-Borsig Waffenträger",16657
-10,"AT-SPG","Waffenträger auf E 100",16913
+6,"mediumTank","M4A3E8 Sherman",1313
+3,"AT-SPG","Marder II",6673
 7,"lightTank","M41 Walker Bulldog",17953
 7,"AT-SPG","AT 15A",54097
 9,"AT-SPG","T30",2593
 5,"AT-SPG","StuG III Ausf. G",1041
-2,"lightTank","Cruiser Mk. I",5201
 8,"mediumTank","T-34-3",64049
+8,"lightTank","leKpz M 41 90 mm GF",50961
 7,"heavyTank","FV201 (A45)",55121
 6,"SPG","AMX 13 F3 AM",4673
 2,"lightTank","Pz.Kpfw. II",2065
-5,"mediumTank","M4A2E4 Sherman",52257
 10,"heavyTank","FV215b",6225
-7,"mediumTank","Type 5 Chi-Ri",1121
+2,"lightTank","Type 97 Te-Ke",3169
 5,"heavyTank","T1 Heavy Tank",3361
 6,"heavyTank","TOG II*",53841
-3,"mediumTank","Pz.Kpfw. S35 739 (f)",51985
+7,"SPG","S-51",1793
 3,"lightTank","AMX 38",5953
 1,"lightTank","Renault Otsu",609
 7,"lightTank","LTTB",18433
 2,"lightTank","Pz.Kpfw. 35 (t)",785
 8,"heavyTank","T32",4385
 3,"lightTank","LT vz. 38",625
-7,"heavyTank","AMX M4 mle. 45",6977
+5,"heavyTank","Churchill III",51713
+6,"heavyTank","KV-85",2817
 7,"mediumTank","VK 30.02 (D)",4113
-2,"AT-SPG","Universal Carrier 2-pdr",8273
 5,"mediumTank","M7",5409
 3,"lightTank","M3 Light",52737
-6,"mediumTank","Pz.Kpfw. V/IV Alpha",54033
+5,"mediumTank","Pz.Kpfw. V/IV Alpha",54033
 6,"lightTank","Type 64",64817
 8,"heavyTank","Tiger II",5137
 10,"AT-SPG","FV215b (183)",9297
@@ -146,9 +145,8 @@
 4,"SPG","SU-5",4865
 4,"lightTank","Pz.Kpfw. II Luchs",6161
 7,"AT-SPG","M56 Scorpion",56353
-3,"mediumTank","M2 Medium Tank",4897
+8,"lightTank","T49",18209
 6,"AT-SPG","SU-100Y",54785
-7,"heavyTank","KV-3",5889
 5,"AT-SPG","S35 CA",10049
 7,"SPG","Crusader 5.5-in. SP",11345
 10,"SPG","T92",8481
@@ -163,7 +161,7 @@
 7,"mediumTank","T-44-122",56833
 9,"mediumTank","T-54",7937
 8,"AT-SPG","AMX AC mle. 48",12097
-8,"heavyTank","T34",2849
+3,"mediumTank","M2 Medium Tank",4897
 10,"SPG","G.W. E 100",9233
 5,"AT-SPG","Archer",13393
 6,"lightTank","59-16",4913
@@ -175,11 +173,12 @@
 9,"mediumTank","E 50",10257
 6,"AT-SPG","Achilles",14417
 6,"AT-SPG","M18 Hellcat",11553
-3,"lightTank","Cruiser Mk. II",6993
+6,"mediumTank","AC 4 Experimental",56145
 8,"heavyTank","IS-5 (Object 730)",58881
 8,"mediumTank","M4A1 Revalorisé",63041
 8,"AT-SPG","SU-101",9985
-4,"lightTank","Type 5 Ke-Ho",2913
+5,"lightTank","AMX ELC bis",14145
+8,"heavyTank","O-Ho",4961
 4,"AT-SPG","Marder 38T",11281
 8,"mediumTank","Chieftain/T95",15441
 8,"heavyTank","Löwe",54289
@@ -192,22 +191,21 @@
 2,"lightTank","FCM 36",15169
 9,"mediumTank","T 55A",60945
 10,"mediumTank","E 50 Ausf. M",12305
-5,"lightTank","AMX ELC bis",14145
+7,"heavyTank","AMX M4 mle. 45",6977
+8,"mediumTank","59-Patton",63793
 3,"lightTank","BT-7 artillery",60929
 9,"AT-SPG","SU-122-54",12033
 4,"mediumTank","Matilda",849
-1,"lightTank","Renault NC-31",1329
 4,"heavyTank","Durchbruchswagen 2",13329
 3,"mediumTank","Type 97 Chi-Ha",2145
 8,"mediumTank","T69",14625
 8,"mediumTank","T-44-100",61953
 1,"lightTank","Renault FT",577
 5,"mediumTank","Turán III prototípus",63249
-8,"mediumTank","STA-2",52065
-2,"lightTank","Type 97 Te-Ke",3169
+7,"lightTank","Aufklärungspanzer Panther",14353
 7,"lightTank","T71",15649
-7,"SPG","S-51",1793
 2,"lightTank","D1",1601
+2,"AT-SPG","AT-1",5121
 8,"mediumTank","Panzer 58 Mutz",64273
 5,"heavyTank","Churchill I",2897
 8,"SPG","G.W. Tiger (P)",15377
@@ -220,46 +218,50 @@
 1,"lightTank","Leichttraktor",3089
 3,"lightTank","T-70",15105
 8,"heavyTank","Caernarvon",3921
-3,"lightTank","T-46",3073
-4,"mediumTank","Sentinel AC I",52817
-4,"mediumTank","T-28",1537
-2,"lightTank","Vickers Mk. E Type B",2353
+3,"mediumTank","Pz.Kpfw. S35 739 (f)",51985
+2,"lightTank","BT-2",1025
+4,"mediumTank","AC 1 Sentinel",52817
+9,"AT-SPG","Waffenträger auf Pz. IV",16401
+6,"SPG","SU-8",5633
 6,"mediumTank","VK 30.01 (P)",7185
 10,"heavyTank","VK 72.01 (K)",58641
 7,"SPG","SU-14-1",16129
 4,"lightTank","Valentine",4945
 5,"mediumTank","M4 Sherman",1057
 4,"mediumTank","Pz.Kpfw. IV Ausf. D",17425
+6,"heavyTank","KV-2",10497
+4,"SPG","T82 HMC",18721
 8,"heavyTank","112",64561
-7,"heavyTank","IS",513
 2,"lightTank","Light Mk. VIC",54865
-4,"AT-SPG","Hetzer",1809
+4,"AT-SPG","Jagdpanzer 38(t) Hetzer",1809
 8,"heavyTank","AMX 50 100",3137
 8,"lightTank","Spähpanzer Ru 251",18449
-2,"lightTank","Type 95 Ha-Go",865
+4,"mediumTank","M3 Lee",3105
+8,"mediumTank","STA-2",52065
 3,"lightTank","Type 2597 Chi-Ha",4401
 10,"mediumTank","Centurion Action X",7249
-3,"lightTank","Pz.Kpfw. II Ausf. J",51729
-6,"mediumTank","Cromwell B",55889
+4,"mediumTank","T-28",1537
+9,"mediumTank","Bat.-Châtillon 25 t AP",5697
 3,"SPG","Sturmpanzer I Bison",2833
+3,"lightTank","Cruiser Mk. II",6993
 7,"heavyTank","O-Ni",5217
 5,"SPG","M41 HMC",4129
-2,"AT-SPG","Panzerjäger I",3601
+10,"AT-SPG","Waffenträger auf E 100",16913
+5,"mediumTank","Matilda IV",51457
 5,"mediumTank","Škoda T 24",1137
 6,"mediumTank","T-34-85",2561
-5,"heavyTank","BDR G1 B",6721
-7,"AT-SPG","Jagdpanther",3857
 4,"lightTank","M5 Stuart",5153
 4,"lightTank","Valentine II",52481
 6,"AT-SPG","SU-100",3585
 2,"AT-SPG","Renault FT AC",7745
-3,"lightTank","Pz.Kpfw. III Ausf. A",4881
+3,"lightTank","Pz.Kpfw. III Ausf. E",4881
 2,"lightTank","T7 Combat Car",55073
 4,"AT-SPG","Alecto",9041
 2,"AT-SPG","T3 HMC",6177
 3,"lightTank","T-127",53505
 2,"lightTank","T-26",4609
 3,"mediumTank","Großtraktor - Krupp",59665
+3,"SPG","Wespe",5905
 6,"mediumTank","M4A3E8 Fury",56097
 7,"AT-SPG","AT 7",10065
 6,"AT-SPG","M36 Jackson",7201
@@ -275,13 +277,15 @@
 7,"AT-SPG","AMX AC mle. 46",10817
 9,"AT-SPG","Jagdtiger",7953
 8,"SPG","FV207",12113
-3,"lightTank","LTP",56577
+8,"heavyTank","IS-3",5377
 7,"AT-SPG","T25 AT",9249
+3,"lightTank","LTP",56577
 2,"SPG","SU-18",3841
 3,"lightTank","Pz.Kpfw. 38 (t)",3345
 3,"SPG","SU-26",7681
 10,"SPG","Bat.-Châtillon 155 58",11841
 7,"SPG","G.W. Panther",8977
+8,"heavyTank","T26E5 Patriot",59169
 9,"AT-SPG","FV4004 Conway",13137
 8,"SPG","M40/M43",7457
 4,"AT-SPG","M8A1",10273
@@ -291,12 +295,13 @@
 6,"lightTank","VK 28.01",10001
 10,"mediumTank","Object 430",17153
 7,"AT-SPG","Challenger",14161
-2,"lightTank","Hotchkiss H35",1345
+3,"SPG","Lorraine 39L AM",3393
+9,"AT-SPG","Tortoise",52561
 8,"AT-SPG","T28 Prototype",11297
 8,"AT-SPG","ISU-130",58625
+8,"heavyTank","AMX M4 mle. 49",62785
 7,"mediumTank","Comet",5457
 10,"AT-SPG","AMX 50 Foch (155)",13889
-5,"AT-SPG","StuG IV",60689
 7,"AT-SPG","Sturer Emil",11025
 6,"heavyTank","O-I",5473
 7,"AT-SPG","ISU-122S",59649
@@ -306,63 +311,67 @@
 4,"mediumTank","SARL 42",14913
 7,"mediumTank","T-34-1",1073
 10,"AT-SPG","Jagdpanzer E 100",12049
+2,"lightTank","Type 95 Ha-Go",865
 8,"mediumTank","T26E4 SuperPershing",13345
-9,"mediumTank","Lorraine 40 t",5697
+5,"heavyTank","BDR G1 B",6721
 8,"AT-SPG","Kanonenjagdpanzer",61969
 2,"lightTank","Renault R35",15937
 6,"mediumTank","Type 4 Chi-To",1889
-3,"AT-SPG","FCM 36 Pak 40",2369
 10,"mediumTank","T-22 medium",61697
-3,"mediumTank","D2",321
 6,"mediumTank","VK 30.01 (D)",14097
+4,"lightTank","Type 5 Ke-Ho",2913
 9,"mediumTank","T54E1",15393
-2,"mediumTank","Vickers Medium Mk. II",337
 10,"mediumTank","T-62A",13825
+9,"mediumTank","AMX 30 1er prototype",15681
+3,"lightTank","Pz.Kpfw. II Ausf. J",51729
+5,"SPG","SU-122A",16385
 2,"SPG","G.Pz. Mk. VI (e)",15121
 8,"lightTank","T-54 ltwt.",18177
-10,"heavyTank","Type 5 Heavy",3937
 5,"mediumTank","Pz.Kpfw. IV hydrostat.",55057
 6,"SPG","M44",16417
-6,"heavyTank","Churchill VII",4689
-9,"AT-SPG","Tortoise",52561
+6,"mediumTank","Cromwell B",55889
+3,"AT-SPG","FCM 36 Pak 40",2369
 6,"mediumTank","Sherman Firefly",3665
 7,"AT-SPG","Krupp-Steyr Waffenträger",61713
 5,"AT-SPG","Pz.Sfl. IVc",16145
 6,"heavyTank","M6",801
-8,"heavyTank","O-Ho",4961
-6,"SPG","SU-8",5633
-5,"heavyTank","KV-1S",18689
+4,"lightTank","T-80",15873
+10,"mediumTank","Object 907",15617
 5,"mediumTank","Matilda Black Prince",53585
 4,"AT-SPG","StuG III Ausf. B",17937
 7,"heavyTank","Tiger I",529
+6,"heavyTank","Churchill VII",4689
 3,"mediumTank","Pz.Kpfw. IV Ausf. A",17169
+2,"lightTank","M2 Light Tank",1825
+2,"mediumTank","Type 89 I-Go/Chi-Ro",5985
 7,"mediumTank","T20",1569
 3,"SPG","T18 HMC",18465
 5,"AT-SPG","SU-85",257
-3,"SPG","Sexton I",54609
+5,"mediumTank","Renault G1",4417
 7,"heavyTank","IS-2",3633
 10,"mediumTank","Object 140",16897
 5,"mediumTank","Ram II",51745
 9,"mediumTank","Centurion Mk. 7/1",5713
 5,"mediumTank","Pz.Kpfw. IV Ausf. H",18193
+8,"heavyTank","T34",2849
 10,"mediumTank","Bat.-Châtillon 25 t",3649
 10,"mediumTank","121",4145
 4,"mediumTank","Type 1 Chi-He",1633
-3,"SPG","Lorraine 39L AM",3393
-6,"mediumTank","Pz.Kpfw. V/IV",51473
+5,"mediumTank","Pz.Kpfw. V/IV",51473
 8,"mediumTank","FV4202 (P)",55633
 4,"mediumTank","Grant",1617
 5,"heavyTank","VK 30.01 (H)",2577
 3,"lightTank","M22 Locust",52769
+10,"AT-SPG","Grille 15",19217
 7,"heavyTank","T29",3873
 5,"heavyTank","O-I Experimental",5729
 5,"heavyTank","KV-220-2 Beta Test",51201
 6,"mediumTank","Type 58",5169
-7,"mediumTank","Panther",1297
-2,"lightTank","Pz.Kpfw. 38H 735 (f)",52497
+6,"heavyTank","VK 36.01 (H)",2321
+7,"AT-SPG","SU-152",2305
 6,"lightTank","AMX 12 t",6465
 7,"mediumTank","Konštrukta T-34/100",1649
-4,"lightTank","T-80",15873
+2,"AT-SPG","Panzerjäger I",3601
 8,"mediumTank","T95E2",53793
 2,"lightTank","Cruiser Mk. III",7761
 3,"lightTank","BT-SV",52225
@@ -379,9 +388,8 @@
 6,"AT-SPG","Churchill Gun Carrier",9809
 5,"AT-SPG","M10 Wolverine",6945
 3,"AT-SPG","SU-76I",54273
-6,"mediumTank","M4A3E8 Sherman",1313
+8,"heavyTank","M6A2E1",52513
 7,"AT-SPG","E 25",55569
-3,"AT-SPG","Marder II",6673
 10,"mediumTank","M48A2/T54E2/T123E6",56865
 4,"SPG","Birch Gun",10833
 7,"SPG","M12",7969
@@ -391,17 +399,19 @@
 8,"AT-SPG","Ferdinand",7697
 6,"SPG","FV304",11857
 9,"mediumTank","M46 Patton",8993
-4,"mediumTank","A-32",52993
+7,"heavyTank","KV-3",5889
 6,"AT-SPG","Jagdpanzer IV",1553
 8,"AT-SPG","ISU-152",7425
 6,"AT-SPG","ARL V39",11585
-3,"SPG","Wespe",5905
+7,"AT-SPG","Jagdpanther",3857
 9,"SPG","G.W. Tiger",8721
+8,"heavyTank","T26E5",58913
 5,"mediumTank","Sherman III",12881
+3,"SPG","Sexton I",54609
 6,"mediumTank","M4A3E2 Sherman Jumbo",10017
-2,"lightTank","M2 Light Tank",1825
+8,"mediumTank","M46 Patton KR",57121
 6,"AT-SPG","Dicker Max",57105
-7,"lightTank","WZ-131",3377
+1,"lightTank","Renault NC-31",1329
 9,"SPG","212A",8449
 2,"lightTank","Pz.Kpfw. II Ausf. D",60433
 8,"lightTank","WZ-132",3889
@@ -414,20 +424,21 @@
 4,"lightTank","T-50",9473
 8,"mediumTank","Centurion Mk. I",5969
 7,"heavyTank","Tiger (P)",10769
-2,"mediumTank","Type 89 I-Go/Chi-Ro",5985
+10,"heavyTank","Type 5 Heavy",3937
 6,"mediumTank","T-34-85 Rudy",59393
 8,"mediumTank","AMX Chasseur de chars",63553
-6,"heavyTank","KV-2",10497
+5,"AT-SPG","StuG IV",60689
 4,"SPG","AMX 105 AM mle. 47",14657
 8,"mediumTank","TVP VTU Koncept",1905
 6,"AT-SPG","Nashorn",11793
 10,"AT-SPG","T110E4",13089
 8,"heavyTank","IS-3A",60417
-8,"heavyTank","AMX M4 mle. 49",62785
+2,"lightTank","Hotchkiss H35",1345
 9,"heavyTank","T-10",11521
-9,"mediumTank","AMX 30 1er prototype",15681
+2,"mediumTank","Vickers Medium Mk. II",337
 2,"lightTank","Pz.Kpfw. I",12817
 10,"mediumTank","M48A1 Patton",14113
+1,"mediumTank","Vickers Medium Mk. I",81
 4,"mediumTank","T-28E with F-30",61441
 7,"mediumTank","A-44",12545
 3,"lightTank","Stuart I-IV",1361
